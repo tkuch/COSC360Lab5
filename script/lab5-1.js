@@ -10,10 +10,9 @@ window.addEventListener('load', function(){
     var cssSelector = "input[name=title],textarea[name=description],input[name=accept]";
     var requiredFields = document.querySelectorAll(cssSelector); 
     var checkbox = requiredFields[2];
-    var checkboxHolder = checkbox.parentElement;
+    checkbox.parentElement.style.backgroundColor = "#FFCBCB";
     for (var i=0; i<requiredFields.length-1; i++){
         requiredFields[i].style.backgroundColor = "#FFCBCB";
-        checkboxHolder.style.backgroundColor = "#FFCBCB";
         requiredFields[i].addEventListener('keydown', setRequiredInput);
         requiredFields[i].addEventListener('keyup', setRequiredInput);
         checkbox.addEventListener('click', setRequiredCheckbox);
@@ -23,5 +22,11 @@ window.addEventListener('load', function(){
         if(!checkbox.checked || requiredFields[0].value === "" || requiredFields[1].value === ""){
             e.preventDefault();
         }
+    });
+    var resetButton = document.querySelector("input[type=reset]");
+    resetButton.addEventListener('click', function() {
+        requiredFields[0].style.backgroundColor = "#FFCBCB";
+        requiredFields[1].style.backgroundColor = "#FFCBCB";
+        checkbox.parentElement.style.backgroundColor = "#FFCBCB";
     });
 });

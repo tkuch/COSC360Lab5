@@ -1,0 +1,67 @@
+html {
+    font-family: sans-serif;
+}
+
+table {
+    margin: 2em auto;
+}
+
+caption {
+    background-color: #8eaa97;
+    padding: 0.5em;
+    font-size: smaller;
+}
+
+th {
+    font-weight: initial;
+    background-color: #ebebeb;
+    font-size: 50%;
+    text-align: center;
+    border-bottom: solid 0.1em lightgrey;
+}
+
+td {
+    background-color: #ebebeb;
+    text-align: center;
+    width: 2em;
+    height: 2em;
+    font-size: 75%;
+    border-right: solid 0.1em lightgrey;
+    border-bottom: solid 0.1em lightgrey;
+}
+
+tbody td:hover {
+    background-color: red;
+}
+
+#today {
+    background-color: #6eafbf;
+    color: #fff;
+}
+
+#prev {
+    text-align: left;
+    padding-left: 0.5em;
+    font-size: 70%;
+}
+
+#next {
+    text-align: right;
+    padding-right: 0.5em;
+    font-size: 70%;
+}
+
+form {
+    background-color:#d8c795;
+    padding: 0.5em;
+}
+
+fieldset p {
+    margin: 0.5em;
+}
+
+.hoverNode {
+    background-color: yellow;
+    border: solid 1px black;
+    color: black;
+}
